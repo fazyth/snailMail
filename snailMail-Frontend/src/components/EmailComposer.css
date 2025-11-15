@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.85);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,14 +14,14 @@
 }
 
 .email-composer {
-  background: white;
-  border-radius: 16px;
+  background: #0f0f1e;
+  border: 3px solid #ffd700;
+  box-shadow: 12px 12px 0px #2d1b00;
   padding: 2rem;
   max-width: 700px;
   width: 100%;
   max-height: 90vh;
   overflow-y: auto;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
   animation: slideUp 0.3s ease-out;
 }
 
@@ -29,27 +29,30 @@
   text-align: center;
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
-  border-bottom: 2px solid #f0f0f0;
+  border-bottom: 3px solid #ffd700;
 }
 
 .composer-title {
   font-size: 2rem;
-  color: #333;
+  color: #ffd700;
   margin: 0 0 0.5rem;
+  font-family: 'Press Start 2P', cursive, system-ui;
+  text-shadow: 2px 2px 0px #2d1b00;
 }
 
 .composer-subtitle {
   font-size: 1rem;
-  color: #777;
+  color: #a8dadc;
   margin: 0;
 }
 
 .delivery-info-banner {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #1a1a2e;
   padding: 1rem;
-  border-radius: 12px;
+  border: 3px solid #ffd700;
+  box-shadow: 4px 4px 0px #2d1b00;
   margin-bottom: 2rem;
-  color: white;
+  color: #a8dadc;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -66,15 +69,18 @@
   font-size: 0.85rem;
   opacity: 0.9;
   font-weight: 600;
+  color: #ffed4e;
 }
 
 .info-value {
   font-size: 1rem;
+  color: #a8dadc;
 }
 
 .info-value.highlight {
   font-weight: 700;
   font-size: 1.1rem;
+  color: #ffd700;
 }
 
 .composer-form {
@@ -97,7 +103,7 @@
 
 .form-field label {
   font-weight: 600;
-  color: #555;
+  color: #ffed4e;
   font-size: 0.95rem;
 }
 
@@ -105,26 +111,30 @@
 .form-field textarea {
   padding: 0.75rem;
   font-size: 1rem;
-  border: 2px solid #e0e0e0;
-  border-radius: 8px;
-  font-family: inherit;
+  font-family: 'Press Start 2P', cursive, system-ui;
+  background: #1a1a2e;
+  color: #a8dadc;
+  border: 3px solid #ffd700;
   transition: all 0.3s ease;
+  box-shadow: 4px 4px 0px #2d1b00;
 }
 
 .form-field input:focus,
 .form-field textarea:focus {
   outline: none;
-  border-color: #667eea;
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  border-color: #ffed4e;
+  box-shadow: 4px 4px 0px #50c878;
+  transform: translate(-1px, -1px);
 }
 
 .form-field input.error,
 .form-field textarea.error {
-  border-color: #f44336;
+  border-color: #ff4444;
+  box-shadow: 4px 4px 0px #ff4444;
 }
 
 .field-error {
-  color: #f44336;
+  color: #ff6b6b;
   font-size: 0.85rem;
   font-weight: 500;
 }
@@ -132,6 +142,7 @@
 .form-field textarea {
   resize: vertical;
   min-height: 120px;
+  line-height: 1.6;
 }
 
 .composer-actions {
@@ -146,47 +157,57 @@
   padding: 0.75rem 2rem;
   font-size: 1rem;
   font-weight: 600;
-  border: none;
-  border-radius: 8px;
+  font-family: 'Press Start 2P', cursive, system-ui;
+  border: 3px solid;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
+  box-shadow: 6px 6px 0px #2d1b00;
 }
 
 .cancel-button {
-  background: #f5f5f5;
-  color: #666;
+  background: #1a1a2e;
+  color: #a8dadc;
+  border-color: #a8dadc;
 }
 
 .cancel-button:hover {
-  background: #e0e0e0;
+  background: #a8dadc;
+  color: #0f0f1e;
+  transform: translate(-1px, -1px);
+  box-shadow: 7px 7px 0px #2d1b00;
 }
 
 .send-button {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  background: #0f0f1e;
+  color: #ffd700;
+  border-color: #ffd700;
 }
 
 .send-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0px #2d1b00;
+  background: #ffd700;
+  color: #0f0f1e;
 }
 
-.send-button:active {
-  transform: translateY(0);
+.send-button:active,
+.cancel-button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 3px 3px 0px #2d1b00;
 }
 
 .composer-footer {
   margin-top: 1.5rem;
   padding-top: 1.5rem;
-  border-top: 2px solid #f0f0f0;
+  border-top: 3px solid #ffd700;
   text-align: center;
 }
 
 .composer-footer p {
   margin: 0;
-  color: #ff9800;
+  color: #ffed4e;
   font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 @keyframes fadeIn {
