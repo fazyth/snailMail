@@ -8,10 +8,10 @@ SnailMail calculates the physical distance between sender and recipient, then de
 
 - **Real Distance Calculation**: Powered by Google Maps Distance Matrix API
 - **Multiple Transport Modes**: Compare delivery times across 4 hilariously slow methods:
-  - 🕊️ **Pigeon** (80 km/h) - The "express" option
-  - 🚶 **Walking** (5 km/h) - Classic postal delivery experience
-  - 🏊 **Swimming** (3 km/h) - For the aquatically inclined
-  - 🧗 **Rock Climbing** (1 km/h) - The scenic route
+  - **Pigeon** (80 km/h) - The "express" option
+  -  **Walking** (5 km/h) - Classic postal delivery experience
+  -  **Swimming** (3 km/h) - For the aquatically inclined
+  -  **Rock Climbing** (1 km/h) - The scenic route
 - **Smart AI Fallback**: Claude AI provides estimates when Google Maps is unavailable
 - **Beautiful UI**: Pixel art animations and responsive design
 - **Email Delivery**: Actually sends emails (via Gmail) with calculated delays
